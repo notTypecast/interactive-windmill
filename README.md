@@ -1,4 +1,4 @@
-# Interactive Windmill  
+# Windmill Simulation
 
 ***Basics***
 This is a simulation of the interactive windmill problem, showcased in [3B1B's video](https://www.youtube.com/watch?v=M64HUIJFTZM). Initially, a natural number of total points is required. When the simulation starts, the line starts horizontally, at the middle; it rotates clockwise. If "Yes" was selected as a limitation option, the line will use each point as a rotation point an infinite amount of times. A number appears above each point, representing how many times the line has rotated around that point. 

@@ -64,8 +64,11 @@ public class Menu extends JPanel implements ActionListener {
         data.limitations = (ddmenu.getSelectedItem() == "Yes") ? true : false;
         
         try {
-        	 data.total_points = Integer.parseInt(text);
-        	 data.simulating = true;
+        	int total_points = Integer.parseInt(text);
+        	if (total_points <= 0)
+        		throw new Exception();
+        	data.total_points = total_points;
+        	data.simulating = true;
         }
         catch (Exception e) {
         	textField.selectAll();
